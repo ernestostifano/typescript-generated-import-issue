@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "resolveJsonModule": true,
+        "allowUnreachableCode": false,
+        "lib": ["ESNext"],
+        "allowJs": false,
+        "checkJs": false,
+        "noEmit": false,
+        "noEmitOnError": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "declarationMap": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "removeComments": false,
+        "isolatedModules": true
+    }
+}

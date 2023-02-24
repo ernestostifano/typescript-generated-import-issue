@@ -1,0 +1,27 @@
+{
+    "name": "typescript-generated-import-issue",
+    "packageManager": "yarn@3.4.1",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "packages/**"
+        ]
+    },
+    "files": [],
+    "scripts": {
+        "build": "yarn run build:a && yarn run build:b && yarn run build:c && yarn run build:d",
+        "build:a": "yarn workspace @scope/package-a-export build && yarn workspace @scope/package-a-import build",
+        "build:b": "yarn workspace @scope/package-b-export build && yarn workspace @scope/package-b-import build",
+        "build:c": "yarn workspace @scope/package-c-export build && yarn workspace @scope/package-c-import build",
+        "build:d": "yarn workspace @scope/package-d-export build && yarn workspace @scope/package-d-import build",
+        "cleanup": "rimraf ./packages/*/build ./packages/*/types"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.21.0",
+        "@babel/core": "^7.21.0",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/preset-typescript": "^7.21.0",
+        "rimraf": "^4.1.2",
+        "typescript": "^4.9.5"
+    }
+}
