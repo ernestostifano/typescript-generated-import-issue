@@ -1,5 +1,9 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@scope/*": ["packages/*"]
+        },
         "target": "ESNext",
         "module": "NodeNext",
         "moduleResolution": "NodeNext",

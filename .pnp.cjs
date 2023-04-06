@@ -2474,6 +2474,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@scope/package-b-import", "workspace:packages/package-b-import"],\
             ["@babel/cli", "virtual:7bcf361a3dee6b9aae4c09b23aa81e90f9d3f70d3e9fd84dd235d884e3e47a7dfe2dd39c8ba58a05f8636af2b894c02311d314d3d48f4965503c9d38a098726f#npm:7.21.0"],\
             ["@babel/core", "npm:7.21.0"],\
+            ["@scope/package-a-import", "workspace:packages/package-a-import"],\
             ["@scope/package-b-export", "workspace:packages/package-b-export"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\

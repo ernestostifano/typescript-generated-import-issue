@@ -1423,7 +1423,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@scope/package-a-import@workspace:packages/package-a-import":
+"@scope/package-a-import@workspace:*, @scope/package-a-import@workspace:packages/package-a-import":
   version: 0.0.0-use.local
   resolution: "@scope/package-a-import@workspace:packages/package-a-import"
   dependencies:
@@ -1450,6 +1450,7 @@ __metadata:
   dependencies:
     "@babel/cli": ^7.21.0
     "@babel/core": ^7.21.0
+    "@scope/package-a-import": "workspace:*"
     "@scope/package-b-export": "workspace:*"
     typescript: ^4.9.5
   languageName: unknown
